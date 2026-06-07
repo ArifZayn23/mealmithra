@@ -47,11 +47,14 @@ align-items:center;
 justify-content:center;
 text-align:center;
 padding:20px;
-background:linear-gradient(
-135deg,
-#0B5D3B,
-#14532d
-);
+background:
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
+url('assets/images/hero-food.jpg');
+background-size:cover;
+background-position:center;
 color:white;
 }
 
@@ -223,6 +226,25 @@ font-size:40px;
 .stat-box:hover{
 transform:translateY(-8px);
 transition:.4s;
+}
+.food-gallery{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.food-gallery img{
+width:320px;
+height:240px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+.food-gallery img:hover{
+transform:scale(1.05);
 }
 
 .footer{
