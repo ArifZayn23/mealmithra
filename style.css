@@ -257,3 +257,38 @@ text-align:center;
 .footer p{
 margin:10px 0;
 }
+.menu-toggle{
+display:none;
+font-size:30px;
+cursor:pointer;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+.nav-links{
+position:absolute;
+top:80px;
+right:-100%;
+width:250px;
+background:white;
+flex-direction:column;
+padding:30px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+transition:.4s;
+display:flex;
+}
+
+.nav-links.active{
+right:20px;
+}
+
+.nav-links li{
+margin:10px 0;
+}
+
+}
